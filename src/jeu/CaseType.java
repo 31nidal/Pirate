@@ -1,8 +1,5 @@
 package jeu;
 
-
 public enum CaseType {
-	NORMAL,
-	ARME,
-	FILET
+	NORMAL, ARME, FILET, COEUR,
 }
