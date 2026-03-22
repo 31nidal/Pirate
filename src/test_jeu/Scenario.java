@@ -7,6 +7,6 @@ public class Scenario {
 
 	public static void main(String[] args) {
 		Affichage journal = new JournalPirate();
-		new Jeu(journal, "Jack", "Bill");
+		Jeu jeu = new Jeu(journal);
 	}
 }

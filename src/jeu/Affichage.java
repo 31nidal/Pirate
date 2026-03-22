@@ -30,4 +30,5 @@ public interface Affichage {
 	public void afficheJoueurSuiv();
 
 	public void afficheCaseNormale();
+	public void afficheTour(String nom);
 }

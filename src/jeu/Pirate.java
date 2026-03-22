@@ -3,9 +3,9 @@ package jeu;
 public class Pirate {
 	private String nom;
 	private int nbCoeur;
-	
+
 	private Couleur couleur;
-	
+
 	private Des des;
 	private int valeur;
 
@@ -13,10 +13,9 @@ public class Pirate {
 	private Affichage journal;
 	private boolean estBloquer;
 	private Plateau plateau;
-	
 
 	public Pirate(String nom, int nbCoeur, Couleur couleur, Affichage journal, Plateau plateau) {
-		
+
 		this.nom = nom;
 		this.nbCoeur = nbCoeur;
 		this.journal = journal;
@@ -38,11 +37,9 @@ public class Pirate {
 
 		plateau.incrCase(valeur);
 
-		
 		journal.afficheDeplacement(valeur);
 		journal.afficheCoeurs(nom, nbCoeur);
 
-		
 		journal.affichePosition(nom, plateau.getPosition());
 
 		testVictoire(ennemi);
@@ -85,9 +82,9 @@ public class Pirate {
 	public boolean testestMort() {
 		return nbCoeur <= 0;
 	}
-	
+
 	public int getNbCoeur() {
-	    return nbCoeur;
+		return nbCoeur;
 	}
 
 	public void estBloquer() {
@@ -105,11 +102,11 @@ public class Pirate {
 	public boolean getVictoire() {
 		return victoire;
 	}
-
+	
 	public Couleur getCouleur() {
 		return couleur;
 	}
-	
+
 	public void incNbCoeur() {
 		nbCoeur++;
 	}

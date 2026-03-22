@@ -82,5 +82,10 @@ public class JournalPirate implements Affichage {
 	public void afficheCaseNormale() {
 		System.out.println("Rien ne se passe ici, la mer est calme ! ");
 	}
+	
+	@Override
+	public void afficheTour(String nom) {
+		System.out.println("C'est au tour de : " + nom);
+	}
 
 }
